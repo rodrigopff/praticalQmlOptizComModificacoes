@@ -1,0 +1,65 @@
+## Libs necessarias para rodar para os notebooks do Livro :
+## A-Practical-Guide-to-Quantum-Machine-Learning-and-Quantum-Optimization
+## Se usar as versoes recomendadas do livro da pau 
+## Deixei sem versao comom abaixo e funfou, Soment dar uns warnings
+## na execucao de algumas linhas dos jupyter. 
+
+## Se preferir pode-se so cria um env e ir instalando as libs conforme aparecem nos notebooks 
+## do livro 
+
+name: qmlPraticalOpt
+
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.9 
+  - pip
+  - pip:
+    - qiskit
+    - pylatexenc
+    - numpy
+    - qiskit-aer-gpu
+    - pennylane
+    - pennylane-qiskit
+    - dwave-ocean-sdk
+    - qiskit-optimization
+    - qiskit-nature
+    - scipy
+    - matplotlib
+    - pyscf
+    - scikit-learn
+    - tensorflow
+    - qiskit-machine-learning
+    - optuna
+    - torch
+    - qiskit-ibm-runtime
+    - jupyterlab 
+    - notebook
+
+### Versoes recomandadas no livros. Da pau 
+  #  - qiskit==0.39.2
+  #  - pylatexenc==2.10
+  #  - numpy==1.21.6
+  #  - qiskit-aer-gpu==0.11.1
+  #  - pennylane==0.26
+  #  - pennylane-qiskit==0.24.0
+  #  - dwave-ocean-sdk==6.0.1
+  #  - qiskit-optimization==0.4.0
+  #  - qiskit-nature==0.4.5
+  #  - scipy==1.7.3
+  #  - matplotlib==3.2.2
+  #  - pyscf==2.1.1
+  #  - scikit-learn==1.0.2
+  #  - tensorflow==2.9.1
+  #  - qiskit-machine-learning==0.5.0
+  #  - optuna==3.0.3
+  #  - torch==1.13 
+  #  - qiskit-ibm-runtime==0.7.0
+  #  - jupyterlab 
+  #  - notebook
+    
+    
+    
+    

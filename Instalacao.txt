@@ -1,0 +1,30 @@
+# Instalacao o ambiente
+
+Rodar o comando: 
+
+# Criar ambiente a partir de um environment.yml (se ja nao estiver sido rodado anteriormente)
+
+ $ conda env create -f environment.yml
+
+# Ativar o ambiente 
+
+ $ conda activate qmlPraticalOpt
+
+# Instalar o ipykernel
+
+ $ python -m ipykernel install --user --name=python3
+ 
+ # executar o jupter 
+ 
+  $ jupyter notebook
+  
+OBs: 
+Se necessitar remover o ambiente :
+
+ $ conda remove -n qmlPraticalOpt --all
+ 
+Se necessitar atualizar/instalar libs, colocar as mesmas no environment.yml e executar:
+
+ $  conda env update -f environment.yml
+ 
+ 
