@@ -1,6 +1,38 @@
 
 # Este repositorio contém os codigos do livro referenciado abaixo com modificações locais para estudo. O diretorio /Exercicios contém os exercícios do livro que exigem implementacões ou que podem ser resolvidos com o auxilio de codigos em python.
-## 
+
+
+
+# Instalacao do ambiente
+Os codigos podem ser executados diretamente seguindo as intruções do livro. Instalando as libs sobre demanda em cada jupyter dos capitulos
+Mas caso se queira term um ambiente com todass as ibs já instaladas pode-se utilizar o passo a passo descrito a seguir
+
+# Criar ambiente a partir de um environment.yml (se ja nao estiver sido rodado anteriormente)
+
+ $ conda env create -f environment.yml
+
+# Ativar o ambiente 
+
+ $ conda activate qmlPraticalOpt
+
+# Instalar o ipykernel
+
+ $ python -m ipykernel install --user --name=python3
+ 
+ # executar o jupter 
+ 
+  $ jupyter notebook
+  
+OBs: 
+Se necessitar remover o ambiente :
+
+ $ conda remove -n qmlPraticalOpt --all
+ 
+Se necessitar atualizar/instalar libs, colocar as mesmas no environment.yml e executar:
+
+ $  conda env update -f environment.yml
+ 
+ 
 
 
 # A Practical Guide to Quantum Machine Learning and Quantum Optimisation 
