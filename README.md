@@ -1,4 +1,6 @@
-# praticalQmlOptizComModificacoes
+
+ Este repositorio contém os codigos do livro referenciado abaixo com modificações locais para estudo.
+ O diretorio /Execicios contém os exercicio do livro que exigem implementacões ou que podem ser resolvidos com o auxilio de codigos em python.
 
 # A Practical Guide to Quantum Machine Learning and Quantum Optimisation 
 
