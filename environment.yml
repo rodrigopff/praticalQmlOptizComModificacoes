@@ -27,6 +27,7 @@ dependencies:
     - qiskit-optimization
     - qiskit-nature
     - scipy
+    - sympy
     - matplotlib
     - pyscf
     - scikit-learn
