@@ -1,0 +1,5 @@
+Podemos reescrever (reduzir) o problema da soma dos subconjuntos (Subset sum problem) como um problema de encontrar o estado fundamental de energia de um modelo de Ising.
+
+Porém ao invés de tentar fazer isso diretamente podemos primeiramente reduzir o problema da soma do subconjunto (Subset sum problem) a um problema do tipo otimizacao quadratica binaria irrestrita (Quadratic Unconstrained Binary Optimization problem - QUBO). Esta transformação permite tratar as varaveis como variaveis binarias (0 e 1) on lugar de variaveis -1 e 1.
+
+Usamos a QUBO para reescever entao varior problemas de otimizacao. O Problema de modelo de Ising pode ser reescrito entao como um problema de QUBO realizando algumas substituicoes algebricas.

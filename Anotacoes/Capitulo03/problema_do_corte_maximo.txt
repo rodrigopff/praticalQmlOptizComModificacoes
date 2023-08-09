@@ -1,0 +1,35 @@
+O problema do Max-Cut em grafos quando transformado para o formalismo quantico deve ser entendido da seguinte maneira:
+
+1 - A representacao das ligacoes dos vertices do grafo indexados pelos seu rotulos, serão as posicoes das portas quanticas Z no produto tensorial.    Os labels ausentes em cada ligacao serao "bracketados" com o operador identidade I.
+
+2 - Cada configuracao de corte do grafo será representado por um vetor de estado o qual sera "bracketado" (formando o valor esperado) com o produto tensorial que forma o grafo.
+
+3 - Depois de avaliado cada produto bracketado (que é o valor esperado) para cada corte no grafo (que são os vetores de estado) teremos como selecionar o valores minimos obtidos que serão a solução desejada para o problema do corte maximo. 
+
+Ex. baseado na figura 3.5 do livro. Grafo com tres vertices:
+Podemos representar o grafo para o problema do corte maximo como: 
+
+      ∑(z0z1 + z0z2), onde       
+                     z0, z1 e z2 representam os vertices , 
+                     z0z1 representa a ligacao (aresta) entre o vertice rotulado com 0  e o vertice rotulado com 1
+                     z0z2 representa a ligacao (aresta) entre o vertice rotulado com 0  e o vertice rotulado com 2   
+       
+Traduzindo o problema para o formalismo quantico teremos:
+
+    A - zj representa uma porta Z, para qualquer j 
+    B - o produto entres os zjs elementos transforma-se em produto tensorial
+
+Portanto: 
+        para o primeiro termo do somatorio z0z1  ==> Z⊗Z⊗I
+        para o segundo termo do somatorio z0z2  ==> Z⊗I⊗Z
+        Observe como os vertices ausentes em cada expressao do somatorio sao representados com a identidade I. 
+
+A partir dai podemos calcular o valor esperado (produto bracketado) para cada vetor de estado na base de n = 3 qubits. Note que n (numero de qubits do estado) será igual ao numero de vertices do grafo. Ex.:
+
+Estado |000> aplicado ao grafo: 
+
+    <000|(Z⊗Z⊗I + Z⊗I⊗Z)|000> 
+    <001|(Z⊗Z⊗I + Z⊗I⊗Z)|001> 
+    ..... e assim por diante
+
+Os menores valores obtidos (observe que o resultado será um escalar) serão a solucao do problema de Max-Cut
