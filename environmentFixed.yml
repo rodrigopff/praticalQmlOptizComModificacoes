@@ -4,11 +4,8 @@
 ## Deixei sem versao comom abaixo e funfou, Soment dar uns warnings
 ## na execucao de algumas linhas dos jupyter. 
 
-## Se preferir pode-se so cria um env e ir instalando as libs conforme aparecem nos notebooks 
-## do livro 
-
-## ESTE É O ENVIRONMENT QUE FUNFAVA ANTIGAMENTE KKKKK. FOI SUBSTITUIDO PELO environmentFixed.yml
-name: qmlPraticalOpt
+## Algumas versoes foram fixadas para funfaf direitim
+name: qmlPraticalOptFixed
 
 channels:
   - conda-forge
@@ -18,12 +15,12 @@ dependencies:
   - python=3.9 
   - pip
   - pip:
-    - qiskit
+    - qiskit==0.39.2
     - pylatexenc
     - numpy
     - qiskit-aer-gpu
-    - pennylane
-    - pennylane-qiskit
+    - pennylane==0.26
+    - pennylane-qiskit==0.24.0
     - dwave-ocean-sdk
     - qiskit-optimization
     - qiskit-nature
