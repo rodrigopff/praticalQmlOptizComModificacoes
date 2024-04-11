@@ -23,6 +23,9 @@ Portanto:
         para o primeiro termo do somatorio z0z1  ==> Z⊗Z⊗I
         para o segundo termo do somatorio z0z2  ==> Z⊗I⊗Z
         Observe como os vertices ausentes em cada expressao do somatorio sao representados com a identidade I. 
+Lembre-se :
+        ⟨0| Z |0⟩ =  1
+        ⟨1| Z |1⟩ = -1
 
 A partir dai podemos calcular o valor esperado (produto bracketado) para cada vetor de estado na base de n = 3 qubits. Note que n (numero de qubits do estado) será igual ao numero de vertices do grafo. Ex.:
 
